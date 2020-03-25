@@ -1,0 +1,7 @@
+metrics:
+  timestamp:
+    id:           ~
+    timestamp:        { type: datetime, required: true }
+    cpu_load:      { type: integer }
+    concurrency:         { type: float }
+    created_at:   ~
