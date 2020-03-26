@@ -21,6 +21,16 @@
 ###Installation
 - Clone the repo from github
 - Run composer install
-- Open the above links
- 
+- Run php bin/console doctrine:database:create to create the database
+- Create the table
+- Use symfony server:start to start the server
+- Open the above links to see the pages
+
+###Database Table used
+CREATE TABLE `metrics_data` (
+  `id` int(11) NOT NULL,
+  `timestamp` datetime NOT NULL,
+  `cpu_load` int(11) NOT NULL,
+  `concurrency` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
  
